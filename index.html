@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark" style="color-scheme: dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0c0f" />
+    <title>DPC VISION — Sites que fazem o seu negócio crescer</title>
+    <meta
+      name="description"
+      content="A DPC VISION cria sites completos para empresas: design, desenvolvimento, hospedagem, SEO e suporte em um único pacote."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DPC VISION — Sites que fazem o seu negócio crescer" />
+    <meta
+      property="og:description"
+      content="Design, desenvolvimento, hospedagem, SEO e suporte contínuo em um único pacote, construído para gerar resultado desde o primeiro acesso."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DPC VISION — Sites que fazem o seu negócio crescer" />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ícones reutilizáveis -->
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display: none">
+      <symbol id="icon-whatsapp" viewBox="0 0 32 32" fill="none">
+        <path
+          fill="currentColor"
+          d="M16.004 3.2c-7.09 0-12.84 5.75-12.84 12.84 0 2.264.594 4.474 1.723 6.42L3.2 28.8l6.51-1.658a12.79 12.79 0 0 0 6.294 1.65h.005c7.09 0 12.84-5.75 12.84-12.84 0-3.43-1.335-6.653-3.76-9.078a12.75 12.75 0 0 0-9.085-3.674Zm0 23.51h-.004a10.64 10.64 0 0 1-5.42-1.484l-.389-.231-3.863.984 1.032-3.766-.253-.386a10.64 10.64 0 0 1-1.63-5.783c0-5.885 4.79-10.674 10.68-10.674a10.6 10.6 0 0 1 7.55 3.129 10.6 10.6 0 0 1 3.123 7.552c-.003 5.885-4.792 10.674-10.677 10.674l-.15-.015Zm5.853-8.001c-.32-.16-1.9-.938-2.195-1.045-.294-.108-.508-.16-.723.16-.214.32-.828 1.045-1.016 1.259-.187.214-.374.24-.694.08-.32-.16-1.35-.498-2.572-1.588-.951-.848-1.593-1.895-1.78-2.215-.187-.32-.02-.492.14-.652.144-.144.32-.374.481-.562.16-.187.214-.32.32-.535.107-.214.053-.4-.027-.562-.08-.16-.723-1.744-.99-2.389-.261-.628-.526-.543-.723-.553l-.615-.011c-.214 0-.562.08-.856.4-.294.32-1.123 1.098-1.123 2.68 0 1.58 1.15 3.109 1.31 3.323.16.214 2.263 3.456 5.484 4.845.766.331 1.364.529 1.83.677.769.245 1.469.21 2.022.128.617-.092 1.9-.777 2.168-1.526.267-.75.267-1.393.187-1.527-.08-.133-.294-.213-.614-.373Z"
+        />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 6.5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-11Z" />
+        <path d="m4 6 8 6.5L20 6" />
+      </symbol>
+    </svg>
+
+    <div class="bg-canvas-wrap" aria-hidden="true">
+      <canvas id="bg-canvas"></canvas>
+      <div class="bg-horizon"></div>
+      <div class="bg-glow"></div>
+    </div>
+
+    <header class="site-header">
+      <span class="scroll-hint">role ou pressione ↓ e ↑</span>
+      <a class="brand-mark" href="#inicio">DPC VISION</a>
+
+      <nav class="primary-nav" aria-label="Principal">
+        <a href="#servicos"><span class="key">[S]</span> serviços</a>
+        <a href="#metodologia"><span class="key">[M]</span> metodologia</a>
+        <a href="#diferenciais"><span class="key">[D]</span> diferenciais</a>
+        <a href="#negocio"><span class="key">[N]</span> seu negócio</a>
+        <a href="#contato"><span class="key">[C]</span> contato</a>
+        <a href="https://wa.me/5544998400729" target="_blank" rel="noopener noreferrer"><span class="key">[W]</span> whatsapp</a>
+      </nav>
+
+      <div class="mobile-nav-wrap">
+        <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav-menu">menu</button>
+        <nav class="mobile-nav" id="mobile-nav-menu" aria-label="Principal">
+          <a href="#servicos">serviços</a>
+          <a href="#metodologia">metodologia</a>
+          <a href="#diferenciais">diferenciais</a>
+          <a href="#negocio">seu negócio</a>
+          <a href="#contato">contato</a>
+          <a href="https://wa.me/5544998400729" target="_blank" rel="noopener noreferrer">whatsapp</a>
+        </nav>
+      </div>
+    </header>
+
+    <aside class="side-progress" aria-hidden="true">
+      <div class="side-progress-track"><span class="side-progress-fill" id="progressFill"></span></div>
+      <ul>
+        <li class="is-active"><a href="#inicio" data-target="inicio">Início</a></li>
+        <li><a href="#servicos" data-target="servicos">Serviços</a></li>
+        <li><a href="#metodologia" data-target="metodologia">Metodologia</a></li>
+        <li><a href="#diferenciais" data-target="diferenciais">Diferenciais</a></li>
+        <li><a href="#negocio" data-target="negocio">Seu negócio</a></li>
+        <li><a href="#contato" data-target="contato">Fale conosco</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section id="inicio" class="hero">
+        <h1 class="hero-logo" aria-label="DPC VISION">
+          <span class="hero-logo-inner" aria-hidden="true">
+            <span class="layer layer--c1">DPC VISION</span>
+            <span class="layer layer--c2">DPC VISION</span>
+            <span class="layer layer--c3">DPC VISION</span>
+            <span class="layer layer--c4">DPC VISION</span>
+            <span class="layer layer--c5">DPC VISION</span>
+            <span class="layer layer--top">DPC VISION</span>
+          </span>
+        </h1>
+        <h2 class="hero-title">O site completo<br />para o seu negócio</h2>
+        <p class="hero-sub">
+          A DPC VISION reúne design, desenvolvimento, hospedagem, otimização, integrações e suporte
+          contínuo em um pacote único, <strong>construído para gerar resultado</strong> desde o primeiro acesso.
+        </p>
+        <a
+          class="hero-cta"
+          href="https://wa.me/5544998400729?text=Ol%C3%A1!%20Quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="wa-dot" aria-hidden="true"></span>
+          <code>falar com a dpc vision no whatsapp</code>
+        </a>
+      </section>
+
+      <!-- ================= SERVIÇOS ================= -->
+      <section id="servicos" class="section">
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Tudo que sua empresa precisa, em um só lugar</h2>
+            <p>
+              A DPC VISION entrega os serviços essenciais para criar, lançar e manter um site
+              profissional. Contrate o pacote completo ou escolha apenas os serviços que você
+              precisa agora.
+            </p>
+          </div>
+          <div class="card-grid">
+            <div class="card">
+              <h3>Design &amp; identidade visual</h3>
+              <p>Criação de layout, paleta de cores e identidade visual alinhados à sua marca.</p>
+            </div>
+            <div class="card">
+              <h3>Desenvolvimento web</h3>
+              <p>Sites rápidos, responsivos e construídos com tecnologia moderna, do zero ao ar.</p>
+            </div>
+            <div class="card">
+              <h3>Domínio &amp; hospedagem</h3>
+              <p>Registro de domínio, hospedagem segura e configuração completa, sem dor de cabeça.</p>
+            </div>
+            <div class="card">
+              <h3>SEO &amp; performance</h3>
+              <p>Otimização para buscadores e velocidade de carregamento, para o site ser encontrado.</p>
+            </div>
+            <div class="card">
+              <h3>Loja virtual &amp; pagamentos</h3>
+              <p>Integração com meios de pagamento, catálogo e checkout otimizado para vender online.</p>
+            </div>
+            <div class="card">
+              <h3>Automação &amp; integrações</h3>
+              <p>Formulários, WhatsApp, CRM e ferramentas de marketing conectados ao seu site.</p>
+            </div>
+            <div class="card">
+              <h3>Conteúdo &amp; copywriting</h3>
+              <p>Textos persuasivos e estrutura de conteúdo pensados para gerar mais contato e vendas.</p>
+            </div>
+            <div class="card">
+              <h3>Suporte &amp; manutenção</h3>
+              <p>Atualizações, backups e suporte técnico contínuo após o lançamento do site.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= METODOLOGIA ================= -->
+      <section id="metodologia" class="section">
+        <div class="panel panel--narrow">
+          <h2>Um processo simples, sem complicação</h2>
+          <p>
+            Contratar um site profissional não precisa ser complicado. Na DPC VISION você tem um
+            único ponto de contato do início ao fim do projeto.
+          </p>
+          <ul class="feature-grid">
+            <li>
+              <span class="feature-title">Processo transparente</span>
+              <span class="feature-desc">Você acompanha cada etapa do projeto, do briefing à entrega, sem surpresas.</span>
+            </li>
+            <li>
+              <span class="feature-title">Entrega rápida</span>
+              <span class="feature-desc">Metodologia ágil para colocar seu site no ar em poucas semanas, não meses.</span>
+            </li>
+            <li>
+              <span class="feature-title">Serviços sob medida</span>
+              <span class="feature-desc">Contrate o pacote completo ou escolha apenas os serviços que fazem sentido para você.</span>
+            </li>
+            <li>
+              <span class="feature-title">Um só parceiro</span>
+              <span class="feature-desc">Design, desenvolvimento, conteúdo e suporte com a mesma equipe, do início ao fim.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= DIFERENCIAIS ================= -->
+      <section id="diferenciais" class="section">
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Repensando o site da sua empresa</h2>
+            <p>
+              Muitos sites corporativos acumulam camadas de complexidade que não geram resultado.
+              A DPC VISION revisita essas premissas com foco no que realmente importa: performance,
+              clareza e conversão.
+            </p>
+          </div>
+          <ul class="card-grid card-grid--list">
+            <li>
+              <h3>Foco em resultado</h3>
+              <p>Cada página é pensada para gerar contato, vendas ou reconhecimento de marca, não só para existir.</p>
+            </li>
+            <li>
+              <h3>Atualizações sem esforço</h3>
+              <p>Você decide quando o conteúdo muda. Peça um ajuste e a equipe cuida do resto.</p>
+            </li>
+            <li>
+              <h3>Nem tudo precisa ser complexo</h3>
+              <p>Soluções simples e diretas para problemas simples, sem inflar prazo ou orçamento.</p>
+            </li>
+            <li>
+              <h3>Fronteiras claras de projeto</h3>
+              <p>Você sabe exatamente o que está incluso em cada etapa e o que é escopo adicional.</p>
+            </li>
+            <li>
+              <h3>O site é a sua vitrine</h3>
+              <p>Um site rápido e bem estruturado muda a forma como seus clientes te encontram.</p>
+            </li>
+            <li>
+              <h3>Tudo em uma proposta</h3>
+              <p>Design, desenvolvimento, domínio e suporte reunidos em uma única proposta, sem letras miúdas.</p>
+            </li>
+            <li>
+              <h3>No ar quando você precisa</h3>
+              <p>Projetos organizados para lançar rápido, com qualidade validada antes de ir ao ar.</p>
+            </li>
+            <li>
+              <h3>Feito para durar</h3>
+              <p>Sites construídos com boas práticas, fáceis de manter e prontos para crescer com o seu negócio.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= SEU NEGÓCIO ================= -->
+      <section id="negocio" class="section">
+        <div class="panel panel--narrow">
+          <h2>Feito para pessoas. Feito para o seu negócio.</h2>
+          <p>
+            A DPC VISION mantém tudo visível e simples: processo claro, comunicação direta e
+            entregas que você entende sem precisar ser técnico.
+          </p>
+          <ul class="feature-grid feature-grid--stack">
+            <li>
+              <span class="feature-title">Feito para ser entendido</span>
+              <span class="feature-desc">Relatórios e entregas em linguagem simples, sem jargão técnico desnecessário.</span>
+            </li>
+            <li>
+              <span class="feature-title">Feito para mudar</span>
+              <span class="feature-desc">Seu site evolui com o seu negócio. Ajustes e novas funcionalidades quando você precisar.</span>
+            </li>
+            <li>
+              <span class="feature-title">Feito para o seu público</span>
+              <span class="feature-desc">Cada site é pensado para o cliente que você quer atrair, não um modelo genérico.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= CONTATO ================= -->
+      <section id="contato" class="section section--split">
+        <div class="split-grid">
+          <div class="panel panel--cta">
+            <h2>Peça seu site agora</h2>
+            <p>Fale com a nossa equipe pelo WhatsApp e receba um orçamento sem compromisso.</p>
+            <a
+              class="btn-primary"
+              href="https://wa.me/5544998400729?text=Ol%C3%A1!%20Quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Falar no WhatsApp
+            </a>
+          </div>
+          <div class="panel panel--cta">
+            <h2>Fique por dentro</h2>
+            <p>Receba novidades sobre projetos, dicas e conteúdos da DPC VISION. Sem spam. Cancele quando quiser.</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <label class="sr-only" for="newsletter-email">E-mail</label>
+              <input id="newsletter-email" type="email" name="email" required autocomplete="email" placeholder="seuemail@exemplo.com" />
+              <button type="submit">Inscrever</button>
+            </form>
+            <p class="newsletter-msg" id="newsletterMsg" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <span class="footer-logo">DPC VISION</span>
+          <div class="footer-social">
+            <a
+              href="https://wa.me/5544998400729"
+              aria-label="WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg aria-hidden="true" focusable="false"><use href="#icon-whatsapp"></use></svg>
+            </a>
+            <a href="mailto:eduardopcampos12@gmail.com" aria-label="E-mail">
+              <svg aria-hidden="true" focusable="false"><use href="#icon-mail"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Site desenvolvido pela <a href="#inicio">DPC VISION</a></p>
+          <p>©2026 DPC VISION. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
