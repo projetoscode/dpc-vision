@@ -609,9 +609,11 @@ main {
 
 .hero {
   min-height: 100vh;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  width: 100%;
   gap: 0;
   padding-top: 110px;
   text-align: center;
@@ -965,19 +967,19 @@ main {
 .hero-title,
 .hero-sub,
 .hero-cta {
-  animation: hero-fade-up 900ms ease both;
+  animation: hero-fade-up 500ms ease both;
 }
 
 .hero-title {
-  animation-delay: 0.1s;
+  animation-delay: 0.05s;
 }
 
 .hero-sub {
-  animation-delay: 0.28s;
+  animation-delay: 0.14s;
 }
 
 .hero-cta {
-  animation-delay: 0.46s;
+  animation-delay: 0.23s;
 }
 
 /* ---------------------------------------------------------------------- */
